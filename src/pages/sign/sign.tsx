@@ -70,14 +70,14 @@ const Sign = ()=>{
     return (
         <>
             <div style={{height:'100vh',lineHeight:'100vh',textAlign:'center',}}>
-            <p>{accountAdress}</p>
-            <p>{sig}</p>
-            <Button variant="contained" onClick={async ()=>{
-                const s = await MetamaskSign.sign('boouniverse sign test');
-                setSig(`${accountAdress}:${s}`)
-                window.location.href = `https://www.youtube.com/watch?v=h9i7d4R36Lw`;
-            }}>Sign</Button>
-      </div>
+                {accountAdress}
+                {sig}
+                <Button variant="contained" onClick={async ()=>{
+                    const s = await MetamaskSign.sign('app metamask sign test');
+                    setSig(`${accountAdress}:${s}`)
+                    window.location.href = `https://medium.com/@jobinleung/%E4%BD%BF%E7%94%A8universal-link%E5%B7%A7%E5%A6%99%E8%A7%A3%E5%86%B3app%E7%AB%AF%E4%BD%BF%E7%94%A8metamask-app%E6%8E%88%E6%9D%83%E4%BB%A5%E5%8F%8A%E4%BA%A4%E4%BA%92-part-1-ee53bde721a`;
+                }}>Sign</Button>
+            </div>
         </>
     )
 }
