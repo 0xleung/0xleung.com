@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box/Box';
 import { styled } from '@mui/system';
 
-import avatarImage from '../../images/avatar.jpeg'
 import avatarHoverImage from '../../images/avatar-h.jpeg'
 
 import twitterIcon from '../../images/twitter.svg'
