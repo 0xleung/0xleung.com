@@ -7,6 +7,7 @@ import avatarHoverImage from '../../images/avatar-h.jpeg'
 import twitterIcon from '../../images/twitter.svg'
 import githubIcon from '../../images/github.svg'
 import mediumIcon from '../../images/medium.svg'
+import juejinIcon from '../../images/juejin.svg'
 
 const CenterOuter = styled('div')({
     maxWidth: '1140px',
@@ -143,6 +144,8 @@ const Page1 = ():JSX.Element=>{
                     <SocialLink image={githubIcon} path="https://github.com/jobinleung" />
                     <SizedBox width='10px' />
                     <SocialLink image={mediumIcon} path="https://medium.com/@jobinleung" />
+                    <SizedBox width='10px' />
+                    <SocialLink image={juejinIcon} path="https://juejin.cn/user/729731451585319/posts" />
                 </Box>
                 <SizedBox height='50px' />
             </CenterOuter>
