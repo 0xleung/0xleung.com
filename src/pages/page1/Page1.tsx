@@ -36,9 +36,10 @@ const IAvatar = styled('div')({
     width: '235px',
     height: '235px',
     margin: '0 auto',
-    background: `#eee url(${avatarImage}) center center no-repeat`,
+    background: `#eee url(${avatarHoverImage}) center center no-repeat`,
+    filter: 'brightness(0.5) contrast(155%)',
     ":hover": {
-        backgroundImage: `url(${avatarHoverImage})`,
+        filter: 'none',
     },
     backgroundSize: 'cover',
     borderRadius: '50%',
