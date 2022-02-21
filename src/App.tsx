@@ -7,6 +7,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import './App.css';
 
 import Page1 from './pages/page1/Page1';
+import Sign from './pages/sign/sign';
 
 
 const App = ():JSX.Element=> {
@@ -14,6 +15,7 @@ const App = ():JSX.Element=> {
     <>
       <CssBaseline/>
       <Routes>
+        <Route path="/sign" element={<Sign />} />
         <Route path="/" element={<Page1 />} />
       </Routes>
     </>
