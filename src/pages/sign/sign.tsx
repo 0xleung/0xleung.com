@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button/Button";
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
+import { Box } from "@mui/system";
 
 
 class MetamaskSign {
@@ -70,12 +71,16 @@ const Sign = ()=>{
     return (
         <>
             <div style={{height:'100vh',lineHeight:'100vh',textAlign:'center',}}>
+                <Box sx={{
+                    display: 'none',
+                }}>
                 {accountAdress}
                 {sig}
+                </Box>
                 <Button variant="contained" onClick={async ()=>{
                     const s = await MetamaskSign.sign('app metamask sign test');
                     setSig(`${accountAdress}:${s}`)
-                    window.location.href = `https://medium.com/@jobinleung/%E4%BD%BF%E7%94%A8universal-link%E5%B7%A7%E5%A6%99%E8%A7%A3%E5%86%B3app%E7%AB%AF%E4%BD%BF%E7%94%A8metamask-app%E6%8E%88%E6%9D%83%E4%BB%A5%E5%8F%8A%E4%BA%A4%E4%BA%92-part-1-ee53bde721a`;
+                    window.location.href = `https://medium.com/@jobinleung/mobile-app-connects-to-metamask-app-and-signs-via-deep-link-part-1-d3ec33069fae`;
                 }}>Sign</Button>
             </div>
         </>
