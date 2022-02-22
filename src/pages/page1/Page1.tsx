@@ -101,67 +101,77 @@ const Page1 = ():JSX.Element=>{
 
     return (
         <>
-            <CenterOuter>
-                <SizedBox height='50px' />
-                <ITitle >Profile</ITitle>
-                <SizedBox height='30px' />
-                <IText>
-                    I'm a full stack developer
-                </IText>
-                <SizedBox height='30px' />
-                <IAvatar/>
-                <SizedBox height='30px' />
-                <IAbout>
-                    <ITitle >About me</ITitle>
-                    <IText>
-                    I'm a full stack developer and I'm very interested in crypto right now, if you have some really cool ideas, you can contact me via the link below.
-                    </IText>
-                    <SizedBox height='10px' />
-                </IAbout>
-                <SizedBox height='30px' />
-                <ITitle >Details</ITitle>
-                <SizedBox height='5px' />
-                <ISubTitle >Name:</ISubTitle>
-                <IText>
-                    Jobin Leung
-                </IText>
-                <SizedBox height='5px' />
-                <ISubTitle >Age:</ISubTitle>
-                <IText>
-                    34
-                </IText>
-                <SizedBox height='5px' />
-                <ISubTitle >Location:</ISubTitle>
-                <IText>
-                    Earth
-                </IText>
-                <SizedBox height='50px' />
-                <Box style={{
-                    textAlign: 'center',
-                }}>
-                    <SocialLink image={twitterIcon} path="https://twitter.com/jobinleung" />
-                    <SizedBox width='10px' />
-                    <SocialLink image={githubIcon} path="https://github.com/jobinleung" />
-                    <SizedBox width='10px' />
-                    <SocialLink image={mediumIcon} path="https://medium.com/@jobinleung" />
-                    <SizedBox width='10px' />
-                    <SocialLink image={juejinIcon} path="https://juejin.cn/user/729731451585319/posts" />
-                </Box>
-                <SizedBox height='50px' />
-            </CenterOuter>
-
-            <footer style={{
-                backgroundColor: '#333333',
-                color: '#fff',
-                padding: '50px',
-                textAlign: 'center',
-                fontSize: '12px',
+            <Box style={{
+                minHeight: '100vh',
+                position: 'relative',
+                paddingBottom: '118px',
             }}>
-                <IText>
-                    created by Jobin with ♥
-                </IText>
+                <CenterOuter>
+                    <SizedBox height='50px' />
+                    <ITitle >Profile</ITitle>
+                    <SizedBox height='30px' />
+                    <IText>
+                        I'm a full stack developer
+                    </IText>
+                    <SizedBox height='30px' />
+                    <IAvatar/>
+                    <SizedBox height='30px' />
+                    <IAbout>
+                        <ITitle >About me</ITitle>
+                        <IText>
+                        I'm a full stack developer and I'm very interested in crypto right now, if you have some really cool ideas, you can contact me via the link below.
+                        </IText>
+                        <SizedBox height='10px' />
+                    </IAbout>
+                    <SizedBox height='30px' />
+                    <ITitle >Details</ITitle>
+                    <SizedBox height='5px' />
+                    <ISubTitle >Name:</ISubTitle>
+                    <IText>
+                        Jobin Leung
+                    </IText>
+                    <SizedBox height='5px' />
+                    <ISubTitle >Age:</ISubTitle>
+                    <IText>
+                        34
+                    </IText>
+                    <SizedBox height='5px' />
+                    <ISubTitle >Location:</ISubTitle>
+                    <IText>
+                        Earth
+                    </IText>
+                    <SizedBox height='50px' />
+                    <Box style={{
+                        textAlign: 'center',
+                    }}>
+                        <SocialLink image={twitterIcon} path="https://twitter.com/jobinleung" />
+                        <SizedBox width='10px' />
+                        <SocialLink image={githubIcon} path="https://github.com/jobinleung" />
+                        <SizedBox width='10px' />
+                        <SocialLink image={mediumIcon} path="https://medium.com/@jobinleung" />
+                        <SizedBox width='10px' />
+                        <SocialLink image={juejinIcon} path="https://juejin.cn/user/729731451585319/posts" />
+                    </Box>
+                    <SizedBox height='50px' />
+                </CenterOuter>
 
-            </footer>
+                <footer style={{
+                    backgroundColor: '#333333',
+                    color: '#fff',
+                    padding: '50px',
+                    textAlign: 'center',
+                    fontSize: '12px',
+                    position: 'absolute',
+                    bottom: 0,
+                    width: '100%',
+                }}>
+                  
+                    <IText>
+                        created by Jobin with ♥
+                    </IText>
+
+                </footer>
+            </Box>
         </>
     );
 }
