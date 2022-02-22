@@ -60,7 +60,10 @@ const Sign = ()=>{
             alert('Please open with Metamask')
         )
         if(!MetamaskSign.isMetamaskLocked()){
-            window.ethereum.request({ method: 'eth_requestAccounts' }).then(()=>{
+            // connect wallet
+            window.ethereum.request({ method: 'eth_requestAccounts' })
+            .then(()=>{
+                // get signer address
                 return MetamaskSign.getSigner().getAddress()
             }).then((address:string)=>{
                 setAccountAdress(address);
