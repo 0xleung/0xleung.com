@@ -156,7 +156,7 @@ const Page1 = ():JSX.Element=>{
                 </CenterOuter>
 
                 <footer style={{
-                    backgroundColor: '#333333',
+                    backgroundColor: '#333',
                     color: '#fff',
                     padding: '50px',
                     textAlign: 'center',
