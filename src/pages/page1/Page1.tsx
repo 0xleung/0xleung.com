@@ -111,7 +111,7 @@ const Page1 = ():JSX.Element=>{
                     <ITitle >Profile</ITitle>
                     <SizedBox height='30px' />
                     <IText>
-                        I'm a full stack developer
+                        I'm a full stack developer!
                     </IText>
                     <SizedBox height='30px' />
                     <IAvatar/>
