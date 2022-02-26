@@ -46,6 +46,7 @@ class MetamaskSign {
     }
 }
 
+
 /**
  * sign page
  */
