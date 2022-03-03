@@ -74,6 +74,7 @@ export const SizedBox = (props: SizedBoxProps)=>{
 
 export type SocialLinkProps = {
     image?: string,
+    title?: string,
     path?: string,
 }
 
@@ -94,6 +95,27 @@ export const SocialLink = (props: SocialLinkProps)=>{
                     borderRadius: '50%',
                 }} />
             </a>
+    )
+}
+
+const ILink = styled('a')({
+    textDecoration: 'none',
+    color: '#000',
+    fontWeight: 'bold',
+    position: 'relative',
+    top: '-5px',
+    textTransform: 'uppercase',
+    ':active': {
+        color: '#000',
+    }
+});
+
+export const SocialLinkText = (props: SocialLinkProps)=>{
+    const {title, path,} = props;
+    return (
+            <ILink href={path} target="_blank" rel="noopener noreferrer">
+                {title}
+            </ILink>
     )
 }
 
@@ -144,6 +166,9 @@ const Page1 = ():JSX.Element=>{
                     <Box style={{
                         textAlign: 'center',
                     }}>
+                        
+                        <SocialLinkText title='blog' path="https://blog.jobinleung.me" />
+                        <SizedBox width='10px' />
                         <SocialLink image={twitterIcon} path="https://twitter.com/jobinleung" />
                         <SizedBox width='10px' />
                         <SocialLink image={githubIcon} path="https://github.com/jobinleung" />
