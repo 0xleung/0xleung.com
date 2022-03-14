@@ -85,7 +85,7 @@ const Sign = ()=>{
                     const s = await MetamaskSign.sign('app metamask sign test');
                     setSig(`${accountAdress}:${s}`)
                     // window.location.href = `https://www.0xleung.com/${s}`;
-                    window.open(`https://www.0xleung.com/${s}`, '_blank')
+                    window.open(`https://www.0xleung.com/authed/${s}`, '_blank')
                 }}>Sign</Button>
             </div>
         </>
