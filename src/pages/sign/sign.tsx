@@ -2,7 +2,19 @@ import Button from "@mui/material/Button/Button";
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { Box } from "@mui/system";
+import { styled } from "@mui/material/styles";
 
+const ILink = styled('a')({
+    textDecoration: 'none',
+    color: '#000',
+    fontWeight: 'bold',
+    position: 'relative',
+    top: '-5px',
+    textTransform: 'uppercase',
+    ':active': {
+        color: '#000',
+    }
+});
 
 class MetamaskSign {
     public static isMetamaskInstalled(): boolean {
@@ -79,13 +91,16 @@ const Sign = ()=>{
                     display: 'none',
                 }}>
                 {accountAdress}
+                <ILink href={`https://www.0xleung.com/authed/${sig}`} target="_blank" rel="noopener noreferrer">
+                    BACK
+                </ILink>
                 {sig}
                 </Box>
                 <Button variant="contained" onClick={async ()=>{
                     const s = await MetamaskSign.sign('app metamask sign test');
                     setSig(`${accountAdress}:${s}`)
                     // window.location.href = `https://www.0xleung.com/${s}`;
-                    window.open(`https://www.0xleung.com/authed/${s}`, '_blank')
+                    // window.open(`https://www.0xleung.com/authed/${s}`, '_blank')
                 }}>Sign</Button>
             </div>
         </>
