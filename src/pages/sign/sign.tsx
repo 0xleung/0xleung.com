@@ -84,7 +84,7 @@ const Sign = ()=>{
                 <Button variant="contained" onClick={async ()=>{
                     const s = await MetamaskSign.sign('app metamask sign test');
                     setSig(`${accountAdress}:${s}`)
-                    window.location.href = `https://medium.com/@jobinleung/mobile-app-connects-to-metamask-app-and-signs-via-deep-link-part-1-d3ec33069fae`;
+                    window.location.href = `https://www.0xleung.com/${s}`;
                 }}>Sign</Button>
             </div>
         </>
