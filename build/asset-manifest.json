@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53f30d77.chunk.css",
+    "main.js": "/static/js/main.7a926130.chunk.js",
+    "main.js.map": "/static/js/main.7a926130.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.91652dc2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.91652dc2.js.map",
+    "static/js/2.e880ad90.chunk.js": "/static/js/2.e880ad90.chunk.js",
+    "static/js/2.e880ad90.chunk.js.map": "/static/js/2.e880ad90.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.53f30d77.chunk.css.map": "/static/css/main.53f30d77.chunk.css.map",
+    "static/js/2.e880ad90.chunk.js.LICENSE.txt": "/static/js/2.e880ad90.chunk.js.LICENSE.txt",
+    "static/media/avatar-h.5d3a3ecd.jpeg": "/static/media/avatar-h.5d3a3ecd.jpeg",
+    "static/media/github.e21209f2.svg": "/static/media/github.e21209f2.svg",
+    "static/media/juejin.9985862a.svg": "/static/media/juejin.9985862a.svg",
+    "static/media/medium.daa4b05b.svg": "/static/media/medium.daa4b05b.svg",
+    "static/media/twitter.4e7e3b9a.svg": "/static/media/twitter.4e7e3b9a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91652dc2.js",
+    "static/js/2.e880ad90.chunk.js",
+    "static/css/main.53f30d77.chunk.css",
+    "static/js/main.7a926130.chunk.js"
+  ]
+}
