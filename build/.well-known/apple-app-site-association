@@ -4,17 +4,7 @@
     "details": [
       {
         "appID": "PSQ5HSGJ9K.com.0xdiy.connectwithmetamask",
-        "paths": [
-          "*",
-          "/"
-        ]
-      },
-      {
-        "appID": "PSQ5HSGJ9K.com.0xdiy.connectwithmetamask",
-        "paths": [
-          "*",
-          "/"
-        ]
+        "paths": ["*"]
       }
     ]
   }
