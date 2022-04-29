@@ -8,6 +8,7 @@ import './App.css';
 
 import Page1 from './pages/page1/Page1';
 import Sign from './pages/sign/sign';
+import PlayGround from './pages/playground/PlayGorund';
 
 
 const App = ():JSX.Element=> {
@@ -15,6 +16,7 @@ const App = ():JSX.Element=> {
     <>
       <CssBaseline/>
       <Routes>
+        <Route path="/playground" element={<PlayGround />} />
         <Route path="/sign" element={<Sign />} />
         <Route path="/" element={<Page1 />} />
       </Routes>
